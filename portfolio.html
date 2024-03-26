@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFÓLIO - Formulário</title>
+</head>
+<body>
+    <form action="enviar.php" method="POST">
+
+        <fieldset>FORMULÁRIO
+        </br>
+        </br>
+        <label for="nome"> Nome: </label>
+        <input type="text" name="nome" value="Digite seu nome" size="50" maxlength="50">
+        </br>
+                          
+        <label for="senha"> Senha: </label>
+         <input type="password" name="senha"  value="" size="20"  maxlength="8">
+         </br>
+              
+         <br>
+         
+         <fieldset>
+         <label for="linguagem">Curso que tem Interesse</label>
+         </br>
+         </br>
+          <!--Clicar sobre a linguagem e poderá selecionar várias linguagens -->
+         <input type="checkbox" name="linguagem[]" value="html"> HTML
+         
+         <input type="checkbox" name="linguagem[]" value="css"  checked > CSS
+        
+         <input type="checkbox" name="linguagem[]"  value="python">Python
+
+         <input type="checkbox" name="linguagem[]"  value="java">Java</br></br>
+         
+         </fieldset>
+         
+                 
+        
+         <fieldset>
+         <label for="linguagemescolhida">Linguagem que irá cursar</label>
+         </br>
+         </br>
+         <!--Clicar sobre a linguagem e só poderá selecionar uma linguagem -->
+         <input type="radio" name="curso" value="html">HTML
+         
+         <input type="radio" name="curso" value="css" checked >CSS
+         
+         <input type="radio" name="curso" value="python">Python
+
+         <input type="radio" name="curso" value="java">Java</br></br>
+         
+         </fieldset>
+          
+          
+         
+          <fieldset>
+            <label for="curso">Cursos finalizados</label>
+            </br>
+            </br>
+            <!--Selecionar a linguagem e só poderá clicar em uma linguagem -->
+           <select name="escola">
+           <option value="java">Java</option>
+           <option selected value="python">Python</option>
+           <option value="css">CSS</option>
+           </select>
+             
+            </fieldset>
+        
+          </br>
+          
+                
+           
+         <label for="mensagem">Mensagem:</label>
+         </br>
+         </br>
+           <textarea name="opiniao" rows="5" cols="40">Digite sua mensagem...</textarea>
+          
+         </br>
+         </br>
+         
+         <input name="Submit" type="submit" id="Submit" value="Enviar">
+
+         <tr>
+        <!--Clicando no link de Voltar, irá ser direcionado novamente a página do Menu-->
+            <th><a href="index.html">VOLTAR</a></th>
+
+         </tr>
+
+         </fieldset>
+         </form>
+         
+         
+</body>
+</html>
